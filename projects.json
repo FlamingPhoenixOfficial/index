@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio to showcase my projects.",
+        "link": "https://example.com/portfolio"
+    },
+    {
+        "title": "Discord Bot",
+        "description": "A custom Discord bot for managing roles and commands.",
+        "link": "https://github.com/yourusername/discord-bot"
+    },
+    {
+        "title": "Weather App",
+        "description": "A simple weather application using an API.",
+        "link": "https://example.com/weather-app"
+    }
+]

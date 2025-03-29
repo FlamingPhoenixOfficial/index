@@ -1,0 +1,100 @@
+/* Import a stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Main container */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Section title */
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Project list - Responsive Grid */
+#project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Project card with glass effect */
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffcc70;
+}
+
+.project p {
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+/* Project link button */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project a:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: scale(1.05);
+}
